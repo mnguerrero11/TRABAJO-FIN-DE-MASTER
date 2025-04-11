@@ -7,8 +7,7 @@
 **Departamento:** Tecnologías de la Información  
 **Área de Conocimiento:** Lenguajes y Sistemas Informáticos  
 **Tutores:** Jacinto Mata Vázquez, Victoria de la Peña Pachón  
-**Correo:** manuel.guerrero790@alu.uhu.es  
-**Fecha de Validación:** 21/02/2025  
+**Correo:** manuel.guerrero790@alu.uhu.es   
 **Fecha de Aprobación por la Comisión:** 27/02/2025
 
 ![UNIVERSIDAD DE HUELVA - ESCUELA TÉCNICA SUPERIOR DE INGENIERÍA](https://pro2tecs.com/wp-content/uploads/2020/06/etsi_uhu_logo.png)
