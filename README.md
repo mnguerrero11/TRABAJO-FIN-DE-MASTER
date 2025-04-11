@@ -10,9 +10,14 @@
 **Correo:** manuel.guerrero790@alu.uhu.es  
 **Fecha de Validación:** 21/02/2025  
 **Fecha de Aprobación por la Comisión:** 27/02/2025
-![EXIST 2025]([https://ejemplo.com/ruta/a/imagen.png](https://nlp.uned.es/exist2025/media/EXIST.png))
-![GRUPO DE INVESTIGACIÓN I2C DE LA UNIVERSIDAD DE HUELVA](https://uhu.es/i2c/wp-content/uploads/2019/logo+++.png)
+
 ![UNIVERSIDAD DE HUELVA - ESCUELA TÉCNICA SUPERIOR DE INGENIERÍA](https://pro2tecs.com/wp-content/uploads/2020/06/etsi_uhu_logo.png)
+
+
+![EXIST 2025]([https://ejemplo.com/ruta/a/imagen.png](https://nlp.uned.es/exist2025/media/EXIST.png)
+
+
+![GRUPO DE INVESTIGACIÓN I2C DE LA UNIVERSIDAD DE HUELVA](https://uhu.es/i2c/wp-content/uploads/2019/logo+++.png)
 
 ---
 
