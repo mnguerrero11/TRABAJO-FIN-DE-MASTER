@@ -14,7 +14,7 @@
 ![UNIVERSIDAD DE HUELVA - ESCUELA TÉCNICA SUPERIOR DE INGENIERÍA](https://pro2tecs.com/wp-content/uploads/2020/06/etsi_uhu_logo.png)
 
 
-![EXIST 2025]([https://ejemplo.com/ruta/a/imagen.png](https://nlp.uned.es/exist2025/media/EXIST.png)
+![EXIST 2025](https://nlp.uned.es/exist2025/media/EXIST.png)
 
 
 ![GRUPO DE INVESTIGACIÓN I2C DE LA UNIVERSIDAD DE HUELVA](https://uhu.es/i2c/wp-content/uploads/2019/logo+++.png)
