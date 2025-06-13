@@ -4,7 +4,7 @@ Una solución inteligente para detectar automáticamente si un meme contiene o a
 
 ---
 
-## 🚀 Funcionalidad
+## Funcionalidad
 
 ### Extensión de Chrome
 
@@ -25,7 +25,7 @@ Una solución inteligente para detectar automáticamente si un meme contiene o a
 
 ---
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 - **Frontend:** HTML, CSS, JavaScript, API de extensiones de Chrome.
 - **Backend:** Python 3.12, FastAPI.
@@ -34,7 +34,7 @@ Una solución inteligente para detectar automáticamente si un meme contiene o a
 
 ---
 
-## ⚙️ Instalación y Uso
+## Instalación y Uso
 
 ### 1. Clonar el repositorio
 
