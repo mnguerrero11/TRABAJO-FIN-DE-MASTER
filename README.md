@@ -1,63 +1,67 @@
-# TRABAJO-FIN-DE-MASTER
+# Meme Sexism Classifier – Chrome Extension + FastAPI Backend
 
-# Detección, Clasificación y Análisis de Contenido Sexista en Datos Multimodales mediante Large Language Models, Vision-Language Models y Learning with Disagreement
-
-**Autor:** Manuel Guerrero García  
-**Titulación:** Máster Oficial en Ingeniería Informática  
-**Departamento:** Tecnologías de la Información  
-**Área de Conocimiento:** Lenguajes y Sistemas Informáticos  
-**Tutores:** Jacinto Mata Vázquez, Victoria de la Peña Pachón  
-**Correo:** manuel.guerrero790@alu.uhu.es   
-**Fecha de Aprobación por la Comisión:** 27/02/2025
-
-![UNIVERSIDAD DE HUELVA - ESCUELA TÉCNICA SUPERIOR DE INGENIERÍA](https://pro2tecs.com/wp-content/uploads/2020/06/etsi_uhu_logo.png)
+Una solución inteligente para detectar automáticamente si un meme contiene o aborda contenido sexista. Este proyecto integra una extensión de Chrome que captura memes desde el navegador y un backend desarrollado con FastAPI que procesa las imágenes utilizando un modelo multimodal alojado en Hugging Face.
 
 ---
 
-## 🧠 Descripción del Proyecto
+## 🚀 Funcionalidad
 
-Este Trabajo de Fin de Máster (TFM) aborda el problema de la **detección, categorización y análisis de contenido sexista** en memes, un tipo de dato **multimodal** que combina texto e imagen. Se propone una arquitectura basada en:
+### Extensión de Chrome
 
-- **Modelos de Lenguaje de Gran Escala (LLM)**
-- **Modelos Multimodales Visión-Lenguaje (VLM)**
-- **Técnicas de aprendizaje con desacuerdo (Learning with Disagreement)**
+- Detecta imágenes de memes en páginas web.
+- Envía la imagen capturada al servidor backend para su análisis.
+- Muestra el resultado del análisis en la interfaz de la extensión:
+  - **YES, ...** si el meme es considerado sexista.
+  - **NO** si no presenta contenido sexista.
+- Indicadores visuales:
+  - Texto en color verde para memes no sexistas.
+  - Texto en color rojo para memes sexistas.
 
-El objetivo es superar las limitaciones de los enfoques unimodales y ofrecer una herramienta robusta y precisa para la detección automática de discursos sexistas, considerando tanto el contenido como la intencionalidad.
+### Backend FastAPI
 
----
-
-## 🎯 Objetivos
-
-### Objetivo General
-Desarrollar una solución computacional que permita identificar y analizar contenido sexista en memes, mediante el uso de modelos avanzados de inteligencia artificial, procesamiento de lenguaje natural (NLP) y visión por computadora.
-
-### Objetivos Específicos
-
-1. Documentar y analizar el estado del arte en modelos LLM y VLM.
-2. Explorar entornos de desarrollo y despliegue, tanto locales como en la nube.
-3. Estudiar los enfoques presentados en **EXIST 2024** como referencia.
-4. Implementar modelos LLM/VLM para análisis multimodal de memes.
-5. Aplicar Learning with Disagreement para tratar la ambigüedad en la clasificación.
-6. Evaluar y optimizar el rendimiento del sistema frente a métricas estándar.
-7. Desarrollar una herramienta interactiva para análisis de memes.
-8. Participar en **EXIST 2025** y validar externamente los resultados.
-9. Redactar y publicar un artículo científico con los hallazgos obtenidos.
+- Proporciona un endpoint `/analyze` que recibe imágenes mediante un formulario.
+- Utiliza un modelo avanzado para analizar el contenido visual y textual del meme.
+- Devuelve una respuesta textual simple con el resultado del análisis.
 
 ---
 
-## 🗂️ Estructura del Proyecto
+## 🛠️ Tecnologías
 
-```plaintext
-📁 tfm-deteccion-sexismo-memes
-├── data/                     # Conjuntos de datos (anotados o en bruto)
-├── notebooks/               # Jupyter Notebooks exploratorios
-├── models/                  # Checkpoints y configuraciones de modelos entrenados
-├── src/                     # Código fuente (entrenamiento, inferencia, evaluación)
-│   ├── preprocessing/       # Limpieza y preparación de datos
-│   ├── training/            # Lógica de entrenamiento
-│   ├── evaluation/          # Métricas y análisis de resultados
-│   └── interface/           # Prototipo de interfaz interactiva
-├── experiments/             # Resultados de experimentos y logs
-├── requirements.txt         # Dependencias del proyecto
-├── README.md                # Documentación principal
-└── paper/                   # Artículo científico y memoria del TFM
+- **Frontend:** HTML, CSS, JavaScript, API de extensiones de Chrome.
+- **Backend:** Python 3.12, FastAPI.
+- **Modelo IA:** Qwen2.5-VL-7B-Instruct a través de Hugging Face Hub.
+- **Librerías:** pillow, requests, huggingface_hub, python-multipart.
+
+---
+
+## ⚙️ Instalación y Uso
+
+### 1. Clonar el repositorio
+
+### 2. Preparar el entorno backend
+pip install -r requirements.txt
+### 3. Ejecutar servidor FastAPI
+uvicorn app:app --host 127.0.0.1 --port 8000
+El backend estará disponible en http://127.0.0.1:8000/analyze.
+
+### 4. Instalar la extensión en Chrome
+Abre Chrome y navega a chrome://extensions/.
+
+Activa el modo desarrollador (Developer mode).
+
+Haz clic en “Cargar descomprimida” (Load unpacked).
+
+Selecciona la carpeta /extension dentro del repositorio clonado.
+
+La extensión quedará instalada y lista para usar.
+
+## Formato de Respuesta del Modelo
+El análisis devuelve un texto con formato sencillo:
+
+YES, DIRECT, OBJECTIFICATION
+
+O simplemente:
+
+NO
+
+Dependiendo de si el meme se considera sexista o no, y en caso afirmativo, las categorías asociadas.
