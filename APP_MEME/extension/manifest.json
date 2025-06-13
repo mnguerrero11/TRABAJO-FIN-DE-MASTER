@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Meme Classifier",
+  "version": "1.0",
+  "description": "Classify memes as sexist or not using a local model.",
+  "permissions": ["storage", "contextMenus"],
+  "host_permissions": ["http://127.0.0.1:8000/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}
