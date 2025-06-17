@@ -51,5 +51,5 @@ Desarrollar una solución computacional que permita identificar y analizar conte
 📁 tfm-deteccion-sexismo-memes
 ├── data/                    # Conjuntos de datos (anotados o en bruto)
 ├── notebooks/               # Jupyter Notebooks exploratorios
-├── experiments/             # Resultados de experimentos y logs
+├── runs_exist_2025/             # Resultados de experimentos y logs
 └── paper/                   # Artículo científico para EXIST 2025
