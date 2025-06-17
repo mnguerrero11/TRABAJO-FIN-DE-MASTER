@@ -1,4 +1,4 @@
-# TRABAJO-FIN-DE-MASTER
+# TRABAJO FIN DE MASTER
 
 # Detección, Clasificación y Análisis de Contenido Sexista en Datos Multimodales mediante Large Language Models, Vision-Language Models y Learning with Disagreement
 
@@ -49,15 +49,7 @@ Desarrollar una solución computacional que permita identificar y analizar conte
 
 ```plaintext
 📁 tfm-deteccion-sexismo-memes
-├── data/                     # Conjuntos de datos (anotados o en bruto)
+├── data/                    # Conjuntos de datos (anotados o en bruto)
 ├── notebooks/               # Jupyter Notebooks exploratorios
-├── models/                  # Checkpoints y configuraciones de modelos entrenados
-├── src/                     # Código fuente (entrenamiento, inferencia, evaluación)
-│   ├── preprocessing/       # Limpieza y preparación de datos
-│   ├── training/            # Lógica de entrenamiento
-│   ├── evaluation/          # Métricas y análisis de resultados
-│   └── interface/           # Prototipo de interfaz interactiva
 ├── experiments/             # Resultados de experimentos y logs
-├── requirements.txt         # Dependencias del proyecto
-├── README.md                # Documentación principal
-└── paper/                   # Artículo científico y memoria del TFM
+└── paper/                   # Artículo científico para EXIST 2025
